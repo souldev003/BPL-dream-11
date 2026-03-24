@@ -1,25 +1,11 @@
 import "./App.css";
-
+import Hero from "./components/banner/Hero";
+import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <>
-      <h1 className="text-2xl bg-red-400">Hello</h1>
-
-      <div className="avatar">
-        <div className="mask mask-heart w-24">
-          <img src="https://img.daisyui.com/images/profile/demo/distracted3@192.webp" />
-        </div>
-      </div>
-      <div className="avatar">
-        <div className="mask mask-squircle w-24">
-          <img src="https://img.daisyui.com/images/profile/demo/distracted1@192.webp" />
-        </div>
-      </div>
-      <div className="avatar">
-        <div className="mask mask-hexagon-2 w-24">
-          <img src="https://img.daisyui.com/images/profile/demo/distracted2@192.webp" />
-        </div>
-      </div>
+      <Navbar></Navbar>
+      <Hero></Hero>
     </>
   );
 }
