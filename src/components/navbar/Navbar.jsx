@@ -1,12 +1,13 @@
 import React from "react";
 import dollarImg from "../../assets/dollar_1.png";
+import logo from "../../assets/logo-footer.png";
 
 const Navbar = () => {
   return (
     <div className="container mx-auto">
       <div className="navbar bg-base-100 shadow-sm flex items-center justify-between">
         <div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <img className="max-w-17.5" src={logo} alt="" />
         </div>
         <div className="flex gap-1">
           <a href="#">
