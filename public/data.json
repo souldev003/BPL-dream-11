@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Virat Kohli",
-    "image": "https://example.com/kohli.jpg",
+    "image": "https://admin.thecricketer.com/weblab/sites/96c8b790-b593-bfda-0ba4-ecd3a9fdefc2/resources/images/site/kohli231007.jpg",
     "country": "India",
     "role": "All-Rounder",
     "rating": 5,
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "name": "Darrell Steward",
-    "image": "https://example.com/steward.jpg",
+    "image": "https://media.crictracker.com/media/featureimage/2016/07/Alec-Stewart.jpg",
     "country": "India",
     "role": "All-Rounder",
     "rating": 4,
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "name": "Babar Azam",
-    "image": "https://example.com/babar.jpg",
+    "image": "https://media.crictracker.com/web/large/media/attachments/1763186754546_Babar-Azam.webp",
     "country": "Pakistan",
     "role": "Batsman",
     "rating": 5,
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "name": "Shakib Al Hasan",
-    "image": "https://example.com/shakib.jpg",
+    "image": "https://static.cricketaddictor.com/images/posts/2024/Shakib-Al-Hasan.jpg?q=80&width=1024&height=538",
     "country": "Bangladesh",
     "role": "All-Rounder",
     "rating": 5,
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "name": "Rashid Khan",
-    "image": "https://example.com/rashid.jpg",
+    "image": "https://media.crictracker.com/web/large/media/attachments/1756808666169_Untitled-design---2025-09-02T155412.webp",
     "country": "Afghanistan",
     "role": "Bowler",
     "rating": 5,
@@ -52,7 +52,7 @@
   {
     "id": 6,
     "name": "Glenn Maxwell",
-    "image": "https://example.com/maxwell.jpg",
+    "image": "https://ichef.bbci.co.uk/ace/standard/800/cpsprodpb/b5a3/live/038d9910-3f8f-11f0-904b-21729955b76d.jpg.webp",
     "country": "Australia",
     "role": "All-Rounder",
     "rating": 4,
