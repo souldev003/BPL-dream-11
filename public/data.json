@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "image": "https://example.com/kohli.jpg",
+    "country": "India",
+    "role": "All-Rounder",
+    "rating": 5,
+    "batting_style": "Right-Hand-Bat",
+    "price": 1500000
+  },
+  {
+    "id": 2,
+    "name": "Darrell Steward",
+    "image": "https://example.com/steward.jpg",
+    "country": "India",
+    "role": "All-Rounder",
+    "rating": 4,
+    "batting_style": "Left-Hand-Bat",
+    "price": 1500000
+  },
+  {
+    "id": 3,
+    "name": "Babar Azam",
+    "image": "https://example.com/babar.jpg",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "rating": 5,
+    "batting_style": "Right-Hand-Bat",
+    "price": 1200000
+  },
+  {
+    "id": 4,
+    "name": "Shakib Al Hasan",
+    "image": "https://example.com/shakib.jpg",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "rating": 5,
+    "batting_style": "Left-Hand-Bat",
+    "price": 1400000
+  },
+  {
+    "id": 5,
+    "name": "Rashid Khan",
+    "image": "https://example.com/rashid.jpg",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "rating": 5,
+    "batting_style": "Right-Hand-Bat",
+    "price": 1100000
+  },
+  {
+    "id": 6,
+    "name": "Glenn Maxwell",
+    "image": "https://example.com/maxwell.jpg",
+    "country": "Australia",
+    "role": "All-Rounder",
+    "rating": 4,
+    "batting_style": "Right-Hand-Bat",
+    "price": 1300000
+  }
+]
