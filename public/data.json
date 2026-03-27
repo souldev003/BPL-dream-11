@@ -7,7 +7,7 @@
     "role": "All-Rounder",
     "rating": 5,
     "batting_style": "Right-Hand-Bat",
-    "price": 1500000
+    "price": 1500
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "role": "All-Rounder",
     "rating": 4,
     "batting_style": "Left-Hand-Bat",
-    "price": 1500000
+    "price": 1500
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "role": "Batsman",
     "rating": 5,
     "batting_style": "Right-Hand-Bat",
-    "price": 1200000
+    "price": 1200
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "role": "All-Rounder",
     "rating": 5,
     "batting_style": "Left-Hand-Bat",
-    "price": 1400000
+    "price": 1400
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "role": "Bowler",
     "rating": 5,
     "batting_style": "Right-Hand-Bat",
-    "price": 1100000
+    "price": 1100
   },
   {
     "id": 6,
@@ -57,6 +57,6 @@
     "role": "All-Rounder",
     "rating": 4,
     "batting_style": "Right-Hand-Bat",
-    "price": 1300000
+    "price": 1300
   }
 ]

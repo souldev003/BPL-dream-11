@@ -2,9 +2,9 @@ import React from "react";
 import dollarImg from "../../assets/dollar_1.png";
 import logo from "../../assets/logo-footer.png";
 
-const Navbar = () => {
+const Navbar = ({ coins }) => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto sticky top-0 z-100">
       <div className="navbar bg-base-100 shadow-sm flex items-center justify-between">
         <div>
           <img className="max-w-17.5" src={logo} alt="" />
@@ -32,7 +32,7 @@ const Navbar = () => {
           </a>
 
           <button className="btn btn-ghost text-lg font-semibold flex items-center justify-center gap-2">
-            0 Coin
+            {coins} Coins
             <img src={dollarImg} alt="Dollar Image" />
           </button>
         </div>

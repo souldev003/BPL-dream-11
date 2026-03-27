@@ -3,10 +3,11 @@ import AvailablePlayers from "./availablePlayers/AvailablePlayers";
 import { useEffect, useState } from "react";
 import SelectedPlayers from "./selectedPlayers/SelectedPlayers";
 
-const Players = () => {
+const Players = ({ coins, setCoins }) => {
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [btnStatus, setBtnStatus] = useState("available");
+  const [selectedPlayer, setSelectedPlayer] = useState([]);
 
   useEffect(() => {
     fetch("/data.json")
@@ -22,7 +23,7 @@ const Players = () => {
         <h1 className="font-bold text-3xl">
           {btnStatus === "available"
             ? "Available Players: "
-            : "Selected Players 2/"}{" "}
+            : `Selected Players ${selectedPlayer.length}/`}{" "}
           {players.length}
         </h1>
         <div className="flex items-center">
@@ -36,7 +37,7 @@ const Players = () => {
             onClick={() => setBtnStatus("selected")}
             className={`btn btn-soft rounded-xl rounded-l-none ${btnStatus === "selected" ? "text-[#00683D] bg-[#E7FE29]" : "btn-ghost"} border-transparent`}
           >
-            Selected
+            Selected({selectedPlayer.length})
           </button>
         </div>
       </div>
@@ -46,9 +47,19 @@ const Players = () => {
           <span className="loading loading-bars loading-xl"></span>
         </div>
       ) : btnStatus === "available" ? (
-        <AvailablePlayers players={players} />
+        <AvailablePlayers
+          players={players}
+          coins={coins}
+          setCoins={setCoins}
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+        />
       ) : (
-        <SelectedPlayers players={players} />
+        <SelectedPlayers
+          players={players}
+          selectedPlayer={selectedPlayer}
+          setSelectedPlayer={setSelectedPlayer}
+        />
       )}
     </div>
   );

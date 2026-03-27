@@ -2,8 +2,26 @@ import React, { useState } from "react";
 import { FaFlag, FaStar } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 
-const Card = ({ player }) => {
+const Card = ({
+  player,
+  coins,
+  setCoins,
+  selectedPlayer,
+  setSelectedPlayer,
+}) => {
   const [playerStatus, setPlayerStatus] = useState(false);
+
+  const handleChoosePlayer = () => {
+    const newCoins = coins - player.price;
+
+    if (newCoins < 0) {
+      alert(`Not Enough Coins to purchase ${player.name}`);
+      return;
+    }
+
+    (setPlayerStatus(true), setCoins(coins - player.price));
+    setSelectedPlayer([...selectedPlayer, player]);
+  };
   return (
     <div>
       <div className="card bg-base-100 shadow-sm mt-8">
@@ -40,7 +58,7 @@ const Card = ({ player }) => {
             <div className="flex items-center justify-between mt-3">
               <span>Price: ${player.price}</span>
               <button
-                onClick={() => setPlayerStatus(true)}
+                onClick={handleChoosePlayer}
                 className={`btn ${playerStatus ? "btn-disabled" : "btn-soft"} `}
               >
                 {playerStatus ? "Selected" : "Choose Player"}
