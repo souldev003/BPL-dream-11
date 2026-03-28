@@ -59,6 +59,8 @@ const Players = ({ coins, setCoins }) => {
           players={players}
           selectedPlayer={selectedPlayer}
           setSelectedPlayer={setSelectedPlayer}
+          coins={coins}
+          setCoins={setCoins}
         />
       )}
     </div>
