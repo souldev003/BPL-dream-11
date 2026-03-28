@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { FaFlag, FaStar } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { toast } from "react-toastify";
@@ -10,17 +9,23 @@ const Card = ({
   selectedPlayer,
   setSelectedPlayer,
 }) => {
-  const [playerStatus, setPlayerStatus] = useState(false);
+  const isSelected = selectedPlayer.find((p) => p.id === player.id);
 
   const handleChoosePlayer = () => {
     const newCoins = coins - player.price;
+
+    const exist = selectedPlayer.find((p) => p.id === player.id);
+    if (exist) {
+      toast.warn(`${player.name} is already exist.`);
+      return;
+    }
 
     if (newCoins < 0) {
       toast.warn(`Not Enough Coins to purchase ${player.name}`);
       return;
     } else {
       toast.success(`Successfully Purchased ${player.name}`);
-      (setPlayerStatus(true), setCoins(coins - player.price));
+      setCoins(coins - player.price);
       setSelectedPlayer([...selectedPlayer, player]);
     }
   };
@@ -61,9 +66,9 @@ const Card = ({
               <span>Price: ${player.price}</span>
               <button
                 onClick={handleChoosePlayer}
-                className={`btn ${playerStatus ? "btn-disabled" : "btn-soft"} `}
+                className={`btn ${isSelected ? "btn-disabled" : "btn-soft"}`}
               >
-                {playerStatus ? "Selected" : "Choose Player"}
+                {isSelected ? "Selected" : "Choose Player"}
               </button>
             </div>
           </div>
