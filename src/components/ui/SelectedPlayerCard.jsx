@@ -3,7 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { RiDeleteBinLine } from "react-icons/ri";
 const SelectedPlayerCard = ({ player, handleDeleteSelectedPlayer }) => {
   return (
-    <div className="mb-16">
+    <div className="">
       <div
         key={player.id}
         className="flex items-center justify-between p-6 rounded-2xl mt-7 border border-amber-600"
@@ -19,7 +19,7 @@ const SelectedPlayerCard = ({ player, handleDeleteSelectedPlayer }) => {
               <FaUser className="fill-amber-200" />
               {player.name}
             </div>
-            <h4>Lorem lorem lorem lorem</h4>
+            <h4 className="text-start">{player.role}</h4>
           </div>
         </div>
 

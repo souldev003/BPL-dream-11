@@ -34,7 +34,7 @@ const Card = ({
       <div className="card bg-base-100 shadow-sm mt-8">
         <figure className="h-64 w-full overflow-hidden">
           <img
-            className="h-full w-full object-fill"
+            className="h-full w-full object-cover"
             src={player.image}
             alt="Cricketer"
           />
@@ -49,7 +49,7 @@ const Card = ({
               <FaFlag />
               <span>{player.country}</span>
             </div>
-            <button className="btn btn-soft">{player.role}</button>
+            <button className="btn btn-ghost">{player.role}</button>
           </div>
           <div>
             <div className="flex items-center justify-between mt-3">

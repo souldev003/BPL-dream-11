@@ -10,14 +10,14 @@
     "price": 1500
   },
   {
-    "id": 2,
-    "name": "Darrell Steward",
-    "image": "https://media.crictracker.com/media/featureimage/2016/07/Alec-Stewart.jpg",
-    "country": "India",
-    "role": "All-Rounder",
-    "rating": 4,
-    "batting_style": "Left-Hand-Bat",
-    "price": 1500
+    "id": 30,
+    "name": "Pat Cummins",
+    "image": "https://ichef.bbci.co.uk/ace/standard/2560/cpsprodpb/c308/live/ae481190-2905-11f1-8d7b-c7ea0e92917e.jpg",
+    "country": "Australia",
+    "role": "Bowler / Captain",
+    "rating": 5,
+    "batting_style": "Right-Hand-Bat",
+    "price": 1800
   },
   {
     "id": 3,

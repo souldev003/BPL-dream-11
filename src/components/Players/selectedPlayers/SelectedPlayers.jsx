@@ -17,7 +17,7 @@ const SelectedPlayers = ({
     setCoins(coins + player.price);
   };
   return (
-    <div>
+    <div className="mb-16">
       {selectedPlayer.length === 0 ? (
         <div className="container mx-auto py-16">
           <h1 className="text-4xl text-center text-gray-300 ">
